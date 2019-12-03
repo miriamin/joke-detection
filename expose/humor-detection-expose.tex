@@ -1,0 +1,41 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage[round]{natbib} %More control for citations, adding BiBTeX compatibility.
+ 
+\title{Joke detection with neural networks}
+\author{Miriam Amin}
+\date{WS 2019/20}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+Humor is a fundamental property of humans. Although scholars are analyzing and studying humor since the Ancient Times, it is until today not completely understood. In contrast to other NLP-related problems, the computational treatment of humor is far behind. 
+
+Former research in computational humor was mainly carried out on Humor Generation and Humor Detection. As I showed in earlier work \citep{aminComputationalHumorAutomatic2019}, none of the humor generators presented so far were able to produce human-like humor. From my investigations I concluded two approaches which seemed promising for the advancement of joke generators -- a generative and a restrictive approach. A generative approach to humor generation would aim at exclusively producing humorous output by preselecting suitable topics to joke about. A restrictive approach on the other hand would consist of two systems: A system that produces texts with structural features of jokes and a second humor detection system that works as a filter letting only the humorous texts pass.  
+One approach for such a filter would be a neural network for text classification with the target classes \texttt{joke} and \texttt{no joke}.
+
+The 
+
+ 
+ \cite{aminComputationalHumorAutomatic2019}
+
+\subsection{Related Work}
+\subsection{Data Set}
+Take subset of my joke dataset as positive examples
+
+
+Create jokes with gpt2-simple as negative examples that are similar to jokes but are not jokes
+\subsection{}
+
+\bibliographystyle{apalike}
+\bibliography{CH_Vol2_Humor_Detection}
+
+\end{document}
+
+

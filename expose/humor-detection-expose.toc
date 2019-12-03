@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {subsection}{\numberline {1.1}Related Work}{1}% 
+\contentsline {subsection}{\numberline {1.2}Data Set}{1}% 
