@@ -1,9 +1,29 @@
 import pandas as pd
 import csv
 from sklearn.utils import shuffle
+import re
+import string
+from nltk import word_tokenize
+from nltk.corpus import stopwords
 
+
+
+def remove_punct_from_text(text):
+    text_nopunct = ''
+    text_nopunct = re.sub('[' + string.punctuation + ']', '', text)
+    return text_nopunct
+
+def lower_case_tokens(tokens):
+    return [w.lower() for w in tokens]
+
+def remove_stopwords(tokens):
+    stoplist = stopwords.words('english')
+    return [word for word in tokens if word not in stoplist]
 
 class JokePreprocessor:
+
+
+    ### Data Gathering ###
     def load(self,file):
         prefix = file[-3:]
         if prefix == 'txt':
@@ -25,4 +45,24 @@ class JokePreprocessor:
         full_df = pd.concat(dfs)
         full_df = shuffle(full_df)
         return full_df
+
+    ### Data Cleaning ###
+
+    def clean_and_tokenize(self, df):
+        df['Joke'] = df['Joke'].apply(lambda x: remove_punct_from_text(x))
+        df['Tokens'] = df['Joke'].apply(lambda x: word_tokenize(x))
+        df['Tokens'] = df['Tokens'].apply(lambda x: lower_case_tokens(x))
+        df['Tokens'] = df['Tokens'].apply(lambda x: remove_stopwords(x))
+        df=df[['Tokens', 'Label']]
+        return df
+
+    def one_hot_encode_label(self, df):
+        df.loc[df['Label'] == 0, 'NoJoke'] = 1
+        df.loc[df['Label'] == 0, 'Joke'] = 0
+        df.loc[df['Label'] == 1, 'NoJoke'] = 0
+        df.loc[df['Label'] == 1, 'Joke'] = 1
+        df = df[['Tokens', 'NoJoke', 'Joke']]
+        return df
+
+
 
