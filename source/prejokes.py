@@ -1,5 +1,7 @@
 import pandas as pd
 import csv
+from sklearn.utils import shuffle
+
 
 class JokePreprocessor:
     def load(self,file):
@@ -14,4 +16,13 @@ class JokePreprocessor:
                     writer.writerow((idx, line.strip('$$$$$')))
         jokes_df = pd.read_csv(file[:-3]+'csv', delimiter='|', index_col='ID')
         return jokes_df
+
+    def add_labels(self, dataframe, label):
+        dataframe['Label'] = label
+        return dataframe
+
+    def merge_and_shuffle (self,dfs):
+        full_df = pd.concat(dfs)
+        full_df = shuffle(full_df)
+        return full_df
 
