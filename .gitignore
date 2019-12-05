@@ -1,6 +1,10 @@
+s3_curated_jokes.txt
+.ipynb_checkpoints/
+__pycache__/
 venv/*
 .idea/*
 .DS_Store
+data/*.txt
 
 
 ### JetBrains ###
