@@ -14,7 +14,7 @@
 \begin{document}
 
 \maketitle
-\tableofcontents
+% \tableofcontents
 
 \section{Introduction}
 Humor is a fundamental property of humans. Although scholars are analyzing and studying humor since the Ancient Times, it is until today not completely understood. In contrast to other NLP-related problems, the computational treatment of humor is far behind. 
@@ -25,17 +25,23 @@ One approach for such a filter would be a neural network for text classification
 The aim of this project is to assess the feasability of current neural network architectures for text classification for the application as such a joke detector. In the following I will briefly present related work and earlier systems for joke detection. I will proceed by outlining the intended method and the data set that will be used for training the neural network. 
 
  
- \cite{aminComputationalHumorAutomatic2019}
 
-\subsection{Related Work}
-\subsection{Data Set}
-The training data set consists of xxx labeled jokes and non-jokes. 
+\section{Related Work}
+Several attempts have been made to classify different forms of humor. \cite{chenHumorRecognitionUsing2018} discriminate English and Chinese one-liners and puns from news text with similar vocabulary. \cite{oliveiraHumorDetectionYelp2015} detect humor in Yelp reviews. Both groups of authors found that Convolutional Neural Networks (CNN) yielded the best results for accuracy. 
 
-The xxx positive jokes examples originate from different websites, crawled by \cite{pungasDatasetEnglishPlaintext2017} and \cite{moudgilPythonScriptsBuilding2017}. 
+\section{Methods}
+The training dataset consists of labeled jokes and non-jokes. The positive jokes examples originate from different websites, crawled by \cite{pungasDatasetEnglishPlaintext2017} and \cite{moudgilPythonScriptsBuilding2017}. 
 
-Negative jokes were created with gpt-2 by using the positive jokes as training data. As I showed earlier \citep{aminComputationalHumorAutomatic2019}, gpt-2 is not able to produce humorous output. However, it can be used to use generate text that is similar to jokes. 
+Compiling a negative data set is more challenging. The documents have to be linguistically similar to jokes, i.e. having a similar word order and vocabulary, but should not be funny. To gather these data, the positive samples will be represented as a suitable feature matrix in order to find similar sentences in an English news corpus. 
+ 
+After preprocessing and vectorization of the documents using GloVe word embeddings, the training subset will be fed into a CNN using the python scykit-learn library. 
 
-\subsection{}
+%1. H\"aufigste 1- und 2-grams raussuchen  (nicht lemmatisieren, stemmen)
+%2. Im Wortschatzprojekt \"ahnliche S\"atze suchen
+
+
+\section{Expected Outcome}
+
 
 \bibliographystyle{apalike}
 \bibliography{CH_Vol2_Humor_Detection}

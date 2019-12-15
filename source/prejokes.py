@@ -5,6 +5,7 @@ import re
 import string
 from nltk import word_tokenize
 from nltk.corpus import stopwords
+from sklearn.model_selection import train_test_split
 
 
 
@@ -20,8 +21,17 @@ def remove_stopwords(tokens):
     stoplist = stopwords.words('english')
     return [word for word in tokens if word not in stoplist]
 
-class JokePreprocessor:
+def clean_numbers(x):
+    if bool(re.search(r'\d', x)):
+        x = re.sub('[0-9]{5,}', '#####', x)
+        x = re.sub('[0-9]{4}', '####', x)
+        x = re.sub('[0-9]{3}', '###', x)
+        x = re.sub('[0-9]{2}', '##', x)
+    return x
 
+
+
+class JokePreprocessor:
 
     ### Data Gathering ###
     def load(self,file):
@@ -46,7 +56,22 @@ class JokePreprocessor:
         full_df = shuffle(full_df)
         return full_df
 
+    def get_max_seq_len(seld, df, col_name):
+        seqs = df[col_name].tolist()
+        tokenized = [word_tokenize(x) for x in seqs]
+        seqs_lengths = [len(x) for x in tokenized]
+        return max(seqs_lengths)
+
     ### Data Cleaning ###
+
+    def remove_punctuation(self, df, col_name):
+        df[col_name] = df[col_name].apply(lambda x: remove_punct_from_text(x))
+        return df
+
+    def replace_numbers(self, df, col_name):
+        df[col_name] = df[col_name].apply(lambda x: clean_numbers(x))
+        return df
+
 
     def clean_and_tokenize(self, df):
         df['Joke'] = df['Joke'].apply(lambda x: remove_punct_from_text(x))
@@ -64,5 +89,12 @@ class JokePreprocessor:
         df = df[['Tokens', 'NoJoke', 'Joke']]
         return df
 
+
+    ### Prepare for Training ###
+
+    def create_vocab(self, df):
+        all_words = [word for tokens in df["Tokens"] for word in tokens]
+        vocab = sorted(list(set(all_words)))
+        return vocab
 
 
