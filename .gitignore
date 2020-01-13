@@ -1,3 +1,5 @@
+data/
+plotdata.txt
 GoogleNews-vectors-negative300*
 s3_curated_jokes.txt
 .ipynb_checkpoints/
@@ -318,3 +320,5 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz.idea/*
+
+*.DS_Store

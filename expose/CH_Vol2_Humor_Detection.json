@@ -1,0 +1,487 @@
+{
+  "config": {
+    "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+    "label": "BetterBibTeX JSON",
+    "preferences": {
+      "DOIandURL": "both",
+      "automaticTags": true,
+      "asciiBibLaTeX": false,
+      "ascii": "",
+      "asciiBibTeX": true,
+      "autoExport": "immediate",
+      "quickCopyMode": "latex",
+      "citeCommand": "cite",
+      "quickCopyPandocBrackets": false,
+      "citekeyFormat": "\u000b[auth:lower][shorttitle3_3][year]",
+      "citekeyFold": true,
+      "keyConflictPolicy": "keep",
+      "auxImport": false,
+      "keyScope": "library",
+      "exportBibTeXStrings": "off",
+      "importBibTeXStrings": true,
+      "bibtexParticleNoOp": false,
+      "skipFields": "",
+      "bibtexURL": "off",
+      "warnBulkModify": 10,
+      "autoExportTooLong": 10,
+      "postscript": "",
+      "strings": "",
+      "autoAbbrev": false,
+      "autoAbbrevStyle": "",
+      "autoExportIdleWait": 10,
+      "cacheFlushInterval": 5,
+      "csquotes": "",
+      "rawLaTag": "#LaTeX",
+      "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
+      "verbatimFields": "url,doi,file,eprint,verba,verbb,verbc",
+      "jabrefFormat": 0,
+      "qualityReport": false,
+      "biblatexExtendedDateFormat": true,
+      "biblatexExtendedNameFormat": false,
+      "suppressTitleCase": false,
+      "suppressBraceProtection": false,
+      "suppressSentenceCase": false,
+      "suppressNoCase": false,
+      "autoExportDelay": 1,
+      "itemObserverDelay": 100,
+      "parseParticles": true,
+      "citeprocNoteCitekey": false,
+      "scrubDatabase": false,
+      "removeStock": false,
+      "ignorePostscriptErrors": true,
+      "debugLogDir": "",
+      "testing": false,
+      "autoPin": false,
+      "kuroshiro": false,
+      "autoExportPrimeExportCacheThreshold": 0,
+      "autoExportPrimeExportCacheBatch": 4,
+      "autoExportPrimeExportCacheDelay": 100,
+      "relativeFilePaths": false,
+      "sorted": false,
+      "git": "config",
+      "mapUnicode": "conservative",
+      "mapText": "",
+      "mapMath": "",
+      "newTranslatorsAskRestart": true,
+      "platform": "mac",
+      "client": "zotero"
+    },
+    "options": {
+      "exportFileData": false,
+      "exportNotes": true,
+      "keepUpdated": false,
+      "exportPath": "/Users/miriamamin/Documents/Digital_Humanities/WS1920/DH_Methods_Applications/joke-detection/expose"
+    }
+  },
+  "collections": {},
+  "items": [
+    {
+      "version": 747,
+      "itemType": "journalArticle",
+      "url": "https://github.com/amoudgl/short-jokes-dataset",
+      "rights": "GPL-2.0",
+      "publicationTitle": "GitHub repository",
+      "date": "2017",
+      "accessDate": "2019-05-22T12:48:26Z",
+      "title": "Python scripts for building 'Short Jokes' dataset, featured on Kaggle",
+      "shortTitle": "Python scripts for building 'Short Jokes' dataset, featured on Kaggle",
+      "creators": [
+        {
+          "firstName": "Abhinav",
+          "lastName": "Moudgil",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "EJ2ALBKI",
+        "DDMYHJME",
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-05-22T12:48:26Z",
+      "dateModified": "2019-09-30T05:29:30Z",
+      "uri": "http://zotero.org/users/5829780/items/SI7KAEEG",
+      "attachments": [],
+      "notes": [],
+      "itemID": 291,
+      "key": "SI7KAEEG",
+      "citekey": "moudgilPythonScriptsBuilding2017",
+      "citationKey": "moudgilPythonScriptsBuilding2017",
+      "libraryID": 1
+    },
+    {
+      "version": 740,
+      "itemType": "conferencePaper",
+      "url": "https://aclweb.org/anthology/papers/N/N18/N18-2018/",
+      "rights": "RECOG",
+      "series": "Short Paper",
+      "volume": "2",
+      "pages": "113-117",
+      "date": "2018",
+      "DOI": "10.18653/v1/N18-2018",
+      "accessDate": "2019-07-03T19:00:20Z",
+      "libraryCatalog": "aclweb.org",
+      "language": "en-us",
+      "title": "Humor Recognition Using Deep Learning",
+      "creators": [
+        {
+          "firstName": "Peng-Yu",
+          "lastName": "Chen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Von-Wun",
+          "lastName": "Soo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "VYFAXL58",
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-07-03T19:00:20Z",
+      "dateModified": "2019-09-29T19:23:46Z",
+      "uri": "http://zotero.org/users/5829780/items/Y9TEMPE7",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Chen_Soo_2018_Humor Recognition Using Deep Learning.pdf",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-07-03T19:00:22Z",
+          "dateModified": "2019-11-01T16:32:14Z",
+          "uri": "http://zotero.org/users/5829780/items/KAHAFJPZ",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/KAHAFJPZ/Chen_Soo_2018_Humor Recognition Using Deep Learning.pdf"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-07-03T19:00:23Z",
+          "dateModified": "2019-07-03T19:00:23Z",
+          "uri": "http://zotero.org/users/5829780/items/24ISU5LZ",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/24ISU5LZ/N18-2018.html"
+        }
+      ],
+      "notes": [],
+      "itemID": 589,
+      "key": "Y9TEMPE7",
+      "citekey": "chenHumorRecognitionUsing2018",
+      "citationKey": "chenHumorRecognitionUsing2018",
+      "libraryID": 1,
+      "publicationTitle": "Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
+    },
+    {
+      "version": 683,
+      "itemType": "journalArticle",
+      "url": "https://github.com/taivop/joke-dataset",
+      "publicationTitle": "GitHub repository",
+      "date": "2017",
+      "extra": "https://github.com/taivop/joke-dataset",
+      "title": "A dataset of English plaintext jokes.",
+      "creators": [
+        {
+          "firstName": "Taivo",
+          "lastName": "Pungas",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "DDMYHJME",
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-09-25T06:21:43Z",
+      "dateModified": "2019-09-30T05:31:19Z",
+      "uri": "http://zotero.org/users/5829780/items/9HJYJ8FP",
+      "attachments": [],
+      "notes": [],
+      "itemID": 1181,
+      "key": "9HJYJ8FP",
+      "citekey": "pungasDatasetEnglishPlaintext2017",
+      "citationKey": "pungasDatasetEnglishPlaintext2017",
+      "libraryID": 1
+    },
+    {
+      "version": 648,
+      "itemType": "conferencePaper",
+      "url": "https://www.aclweb.org/anthology/P19-1394",
+      "place": "Florence, Italy",
+      "publisher": "Association for Computational Linguistics",
+      "pages": "4027–4032",
+      "date": "2019-07",
+      "DOI": "10.18653/v1/P19-1394",
+      "accessDate": "2019-09-29T19:38:34Z",
+      "libraryCatalog": "ACLWeb",
+      "conferenceName": "ACL 2019",
+      "abstractNote": "The task of humor recognition has attracted a lot of attention recently due to the urge to process large amounts of user-generated texts and rise of conversational agents. We collected a dataset of jokes and funny dialogues in Russian from various online resources and complemented them carefully with unfunny texts with similar lexical properties. The dataset comprises of more than 300,000 short texts, which is significantly larger than any previous humor-related corpus. Manual annotation of 2,000 items proved the reliability of the corpus construction approach. Further, we applied language model fine-tuning for text classification and obtained an F1 score of 0.91 on a test set, which constitutes a considerable gain over baseline methods. The dataset is freely available for research community.",
+      "title": "Large Dataset and Language Model Fun-Tuning for Humor Recognition",
+      "creators": [
+        {
+          "firstName": "Vladislav",
+          "lastName": "Blinov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Valeria",
+          "lastName": "Bolotova-Baranova",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pavel",
+          "lastName": "Braslavski",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-09-29T19:38:34Z",
+      "dateModified": "2019-09-29T19:38:34Z",
+      "uri": "http://zotero.org/users/5829780/items/CFYUWT6Y",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-09-29T19:38:36Z",
+          "dateModified": "2019-09-29T19:38:36Z",
+          "uri": "http://zotero.org/users/5829780/items/PVV49HPR",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/PVV49HPR/Blinov et al. - 2019 - Large Dataset and Language Model Fun-Tuning for Hu.pdf"
+        }
+      ],
+      "notes": [],
+      "itemID": 1203,
+      "key": "CFYUWT6Y",
+      "citekey": "blinovLargeDatasetLanguage2019",
+      "citationKey": "blinovLargeDatasetLanguage2019",
+      "libraryID": 1,
+      "publicationTitle": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics"
+    },
+    {
+      "version": 737,
+      "itemType": "thesis",
+      "date": "2019",
+      "title": "Computational humor - Automatic generation of jokes",
+      "creators": [
+        {
+          "firstName": "Miriam",
+          "lastName": "Amin",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-12-03T10:11:16Z",
+      "dateModified": "2019-12-03T10:34:35Z",
+      "uri": "http://zotero.org/users/5829780/items/W7FPYMA9",
+      "attachments": [],
+      "notes": [],
+      "itemID": 1240,
+      "key": "W7FPYMA9",
+      "citekey": "aminComputationalHumorAutomatic2019",
+      "citationKey": "aminComputationalHumorAutomatic2019",
+      "libraryID": 1,
+      "publisher": "Leipzig University",
+      "type": "Bachelor Thesis"
+    },
+    {
+      "version": 742,
+      "itemType": "conferencePaper",
+      "date": "2015",
+      "libraryCatalog": "Semantic Scholar",
+      "abstractNote": "We utilize the state-of-the-art in deep learning to show that we can learn by example what constitutes humor in the context of a Yelp review. To the best of the authors knowledge, no systematic study of deep learning for humor exists – thus, we construct a scaffolded study. First, we use “shallow” methods such as Random Forests and Linear Discriminants built on top of bag-of-words and word vector features. Then, we build deep feedforward networks on top of these features – in some sense, measuring how much of an effect basic feedforward nets help. Then, we use recurrent neural networks and convolutional neural networks to more accurately model the sequential nature of a review.",
+      "title": "Humor Detection in Yelp reviews",
+      "creators": [
+        {
+          "firstName": "Luke de",
+          "lastName": "Oliveira",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alfredo Láinez",
+          "lastName": "Rodrigo",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Artificial neural network",
+          "type": 1
+        },
+        {
+          "tag": "Bag-of-words model",
+          "type": 1
+        },
+        {
+          "tag": "Convolutional neural network",
+          "type": 1
+        },
+        {
+          "tag": "Deep learning",
+          "type": 1
+        },
+        {
+          "tag": "Feed forward (control)",
+          "type": 1
+        },
+        {
+          "tag": "Feedforward neural network",
+          "type": 1
+        },
+        {
+          "tag": "Neural Network Simulation",
+          "type": 1
+        },
+        {
+          "tag": "Random forest",
+          "type": 1
+        },
+        {
+          "tag": "Recurrent neural network",
+          "type": 1
+        },
+        {
+          "tag": "Review [Publication Type]",
+          "type": 1
+        },
+        {
+          "tag": "Word embedding",
+          "type": 1
+        }
+      ],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-12-03T18:28:30Z",
+      "dateModified": "2019-12-03T18:28:35Z",
+      "uri": "http://zotero.org/users/5829780/items/462HG32E",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Oliveira_Rodrigo_2015_Humor Detection in Yelp reviews.pdf",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-12-03T18:28:34Z",
+          "dateModified": "2019-12-03T18:28:35Z",
+          "uri": "http://zotero.org/users/5829780/items/8P5BKY6N",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/8P5BKY6N/Oliveira_Rodrigo_2015_Humor Detection in Yelp reviews.pdf"
+        },
+        {
+          "version": 0,
+          "itemType": "attachment",
+          "url": "https://www.semanticscholar.org/paper/Humor-Detection-in-Yelp-reviews-Oliveira-Rodrigo/c36f762b12fb7fe26c200d54b44254303ee8ab2c",
+          "accessDate": "2019-12-03T18:28:31Z",
+          "title": "Semantic Scholar Link",
+          "parentItem": "462HG32E",
+          "linkMode": "linked_url",
+          "contentType": "text/html",
+          "charset": "",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2019-12-03T18:28:31Z",
+          "dateModified": "2019-12-03T18:28:31Z",
+          "uri": "http://zotero.org/users/5829780/items/MP9WLX3Q",
+          "itemID": 1243,
+          "key": "MP9WLX3Q"
+        }
+      ],
+      "notes": [],
+      "itemID": 1242,
+      "key": "462HG32E",
+      "citekey": "oliveiraHumorDetectionYelp2015",
+      "citationKey": "oliveiraHumorDetectionYelp2015",
+      "libraryID": 1
+    },
+    {
+      "version": 744,
+      "itemType": "webpage",
+      "url": "https://medium.com/jatana/report-on-text-classification-using-cnn-rnn-han-f0e887214d5f",
+      "date": "2018-07-17T12:34:30.564Z",
+      "accessDate": "2019-12-03T18:31:58Z",
+      "language": "en",
+      "abstractNote": "Experimenting with various neural networks architectures.",
+      "title": "Report on Text Classification using CNN, RNN & HAN",
+      "creators": [
+        {
+          "firstName": "Akshat",
+          "lastName": "Maheshwari",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-12-03T18:31:58Z",
+      "dateModified": "2019-12-03T18:31:58Z",
+      "uri": "http://zotero.org/users/5829780/items/AHEWPSDK",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-12-03T18:32:04Z",
+          "dateModified": "2019-12-03T18:32:04Z",
+          "uri": "http://zotero.org/users/5829780/items/2A34DT26",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/2A34DT26/report-on-text-classification-using-cnn-rnn-han-f0e887214d5f.html"
+        }
+      ],
+      "notes": [],
+      "itemID": 1245,
+      "key": "AHEWPSDK",
+      "citekey": "maheshwariReportTextClassification2018",
+      "citationKey": "maheshwariReportTextClassification2018",
+      "libraryID": 1,
+      "publicationTitle": "Medium"
+    },
+    {
+      "version": 0,
+      "itemType": "webpage",
+      "url": "https://www.kaggle.com/revanth9/wikipediaplotdata",
+      "accessDate": "2019-12-20T13:32:32Z",
+      "title": "Stories of American movies | Kaggle",
+      "creators": [],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2019-12-20T13:32:32Z",
+      "dateModified": "2019-12-20T13:32:32Z",
+      "uri": "http://zotero.org/users/5829780/items/I4RY2J67",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Stories of American movies | Kaggle",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2019-12-20T13:32:43Z",
+          "dateModified": "2019-12-20T13:32:43Z",
+          "uri": "http://zotero.org/users/5829780/items/SBZJ39IL",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/SBZJ39IL/wikipediaplotdata.html"
+        }
+      ],
+      "notes": [],
+      "itemID": 1247,
+      "key": "I4RY2J67",
+      "citekey": "StoriesAmericanMovies",
+      "citationKey": "StoriesAmericanMovies",
+      "libraryID": 1
+    }
+  ]
+}
