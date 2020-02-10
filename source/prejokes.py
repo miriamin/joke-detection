@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import csv
 from sklearn.utils import shuffle
 import re
@@ -22,9 +23,22 @@ def remove_punct_from_text(text):
 def lower_case_tokens(tokens):
     return [w.lower() for w in tokens]
 
+def lower_case(text):
+    # word_list = text.split()
+    word_list = [word.lower() for word in text.split()]
+    text_lower = ' '.join(word_list)
+    return text_lower
+
 def remove_stopwords(tokens):
     stoplist = stopwords.words('english')
-    return [word for word in tokens if word not in stoplist]
+    if type(tokens) is list:
+        out = [word for word in tokens if word not in stoplist]
+    if type(tokens) is str:
+        word_list = tokens.split()
+        word_list_minus_stopwords = [word for word in word_list if word not in stoplist]
+        out = ' '.join(word_list_minus_stopwords)
+    return out
+
 
 def clean_numbers(x):
     if bool(re.search(r'\d', x)):
@@ -55,6 +69,8 @@ class JokePreprocessor:
         return dataframe
 
     def merge_and_shuffle (self,dfs):
+        for df in dfs:
+            df.columns = ['text', 'label']
         full_df = pd.concat(dfs)
         full_df = shuffle(full_df)
         return full_df
@@ -77,11 +93,22 @@ class JokePreprocessor:
 
 
     def clean_and_tokenize(self, df, col_name):
+        new_col_name = col_name + '_tokenized'
         df[col_name] = df[col_name].apply(lambda x: remove_punct_from_text(x))
-        df['Tokens'] = df[col_name].apply(lambda x: word_tokenize(x))
-        df['Tokens'] = df['Tokens'].apply(lambda x: lower_case_tokens(x))
-        df['Tokens'] = df['Tokens'].apply(lambda x: remove_stopwords(x))
-        #df = df[['Tokens', 'Label']]
+        df[col_name] = df[col_name].apply(lambda x: clean_numbers(x))
+        df[new_col_name] = df[col_name].apply(lambda x: word_tokenize(x))
+        df[new_col_name] = df[new_col_name].apply(lambda x: lower_case_tokens(x))
+        df[new_col_name] = df[new_col_name].apply(lambda x: remove_stopwords(x))
+        df = df.drop(col_name, axis=1)
+        return df
+
+    def clean_and_tokenize_spacy(self, df, col_name):
+        new_col_name = col_name + '_spacy_vectorized'
+        df[col_name] = df[col_name].apply(lambda x: remove_punct_from_text(x))
+        df[col_name] = df[col_name].apply(lambda x: clean_numbers(x))
+        df[col_name] = df[col_name].apply(lambda x: lower_case(x))
+        df[new_col_name] = df[col_name].apply(lambda x: remove_stopwords(x))
+        df = df.drop(col_name, axis=1)
         return df
 
     def one_hot_encode_label(self, df):
@@ -123,12 +150,24 @@ class JokePreprocessor:
         return filtered
 
     ### calculalte similarities ###
-    def similarity_matrix(self, joke_df, plot_df):
+    def similarity_matrix(self, joke_df, plot_df, col_name):
+        nlp = spacy.load('en_core_web_lg')
         joke_df.reset_index()
-        for i in range(len(joke_df.index)):
-            col_name = 'plot_sentence_' + i
+        plot_df.reset_index()
+        plot_df.columns = ['target']
+        similarity_matrix = joke_df
+        similarity_matrix[col_name] = similarity_matrix[col_name].apply(lambda x: nlp(x))
+        for i in plot_df.index:
+            compare_sentence = nlp(plot_df.loc[i, 'target'])
+            similarity_matrix[str(i)] = similarity_matrix[col_name].apply(lambda x: x.similarity(compare_sentence))
+        return similarity_matrix
 
-            # use sklearn cosine_similarity
+    def load_book_to_df(self, file):
+        with open(file, 'r') as textfile:
+            text = file.read()
+            sentences = sent_tokenize(text)
+        df = pd.DataFrame(sentences)
+        return df
 
 
 

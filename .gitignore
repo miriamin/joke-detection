@@ -1,4 +1,6 @@
-data/
+data/*
+!joke_classifier_dataset.csv
+!joke_nonjoke_dataset.csv
 plotdata.txt
 GoogleNews-vectors-negative300*
 s3_curated_jokes.txt
@@ -8,7 +10,11 @@ venv/*
 .idea/*
 .DS_Store
 data/*.txt
+detect-jkes-with-cnn.ipynb
+detect_jokes_cnn_word2vec.ipynb
 
+plots/
+expose/
 
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm

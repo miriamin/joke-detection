@@ -23,7 +23,6 @@
       "skipFields": "",
       "bibtexURL": "off",
       "warnBulkModify": 10,
-      "autoExportTooLong": 10,
       "postscript": "",
       "strings": "",
       "autoAbbrev": false,
@@ -32,20 +31,25 @@
       "cacheFlushInterval": 5,
       "csquotes": "",
       "rawLaTag": "#LaTeX",
+      "rawImports": false,
       "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
       "verbatimFields": "url,doi,file,eprint,verba,verbb,verbc",
       "jabrefFormat": 0,
       "qualityReport": false,
       "biblatexExtendedDateFormat": true,
       "biblatexExtendedNameFormat": false,
-      "suppressTitleCase": false,
-      "suppressBraceProtection": false,
-      "suppressSentenceCase": false,
-      "suppressNoCase": false,
+      "exportTitleCase": true,
+      "exportBraceProtection": true,
+      "retainCache": false,
+      "importSentenceCase": "on+guess",
+      "importCaseProtection": "as-needed",
       "autoExportDelay": 1,
       "itemObserverDelay": 100,
       "parseParticles": true,
       "citeprocNoteCitekey": false,
+      "extraMergeTeX": true,
+      "extraMergeCSL": true,
+      "extraMergeCitekeys": true,
       "scrubDatabase": false,
       "removeStock": false,
       "ignorePostscriptErrors": true,
@@ -53,24 +57,20 @@
       "testing": false,
       "autoPin": false,
       "kuroshiro": false,
-      "autoExportPrimeExportCacheThreshold": 0,
-      "autoExportPrimeExportCacheBatch": 4,
-      "autoExportPrimeExportCacheDelay": 100,
       "relativeFilePaths": false,
-      "sorted": false,
       "git": "config",
       "mapUnicode": "conservative",
       "mapText": "",
       "mapMath": "",
       "newTranslatorsAskRestart": true,
+      "workers": 0,
       "platform": "mac",
       "client": "zotero"
     },
     "options": {
       "exportFileData": false,
       "exportNotes": true,
-      "keepUpdated": false,
-      "exportPath": "/Users/miriamamin/Documents/Digital_Humanities/WS1920/DH_Methods_Applications/joke-detection/expose"
+      "keepUpdated": false
     }
   },
   "collections": {},
@@ -104,10 +104,10 @@
       "uri": "http://zotero.org/users/5829780/items/SI7KAEEG",
       "attachments": [],
       "notes": [],
-      "itemID": 291,
-      "key": "SI7KAEEG",
       "citekey": "moudgilPythonScriptsBuilding2017",
       "citationKey": "moudgilPythonScriptsBuilding2017",
+      "itemID": 291,
+      "key": "SI7KAEEG",
       "libraryID": 1
     },
     {
@@ -168,15 +168,15 @@
         }
       ],
       "notes": [],
-      "itemID": 589,
-      "key": "Y9TEMPE7",
       "citekey": "chenHumorRecognitionUsing2018",
       "citationKey": "chenHumorRecognitionUsing2018",
+      "itemID": 589,
+      "key": "Y9TEMPE7",
       "libraryID": 1,
       "publicationTitle": "Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
     },
     {
-      "version": 683,
+      "version": 746,
       "itemType": "journalArticle",
       "url": "https://github.com/taivop/joke-dataset",
       "publicationTitle": "GitHub repository",
@@ -201,10 +201,10 @@
       "uri": "http://zotero.org/users/5829780/items/9HJYJ8FP",
       "attachments": [],
       "notes": [],
-      "itemID": 1181,
-      "key": "9HJYJ8FP",
       "citekey": "pungasDatasetEnglishPlaintext2017",
       "citationKey": "pungasDatasetEnglishPlaintext2017",
+      "itemID": 1181,
+      "key": "9HJYJ8FP",
       "libraryID": 1
     },
     {
@@ -259,10 +259,10 @@
         }
       ],
       "notes": [],
-      "itemID": 1203,
-      "key": "CFYUWT6Y",
       "citekey": "blinovLargeDatasetLanguage2019",
       "citationKey": "blinovLargeDatasetLanguage2019",
+      "itemID": 1203,
+      "key": "CFYUWT6Y",
       "libraryID": 1,
       "publicationTitle": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics"
     },
@@ -288,10 +288,10 @@
       "uri": "http://zotero.org/users/5829780/items/W7FPYMA9",
       "attachments": [],
       "notes": [],
-      "itemID": 1240,
-      "key": "W7FPYMA9",
       "citekey": "aminComputationalHumorAutomatic2019",
       "citationKey": "aminComputationalHumorAutomatic2019",
+      "itemID": 1240,
+      "key": "W7FPYMA9",
       "libraryID": 1,
       "publisher": "Leipzig University",
       "type": "Bachelor Thesis"
@@ -380,7 +380,7 @@
           "path": "/Users/miriamamin/Documents/Zotero/storage/8P5BKY6N/Oliveira_Rodrigo_2015_Humor Detection in Yelp reviews.pdf"
         },
         {
-          "version": 0,
+          "version": 742,
           "itemType": "attachment",
           "url": "https://www.semanticscholar.org/paper/Humor-Detection-in-Yelp-reviews-Oliveira-Rodrigo/c36f762b12fb7fe26c200d54b44254303ee8ab2c",
           "accessDate": "2019-12-03T18:28:31Z",
@@ -395,14 +395,15 @@
           "dateModified": "2019-12-03T18:28:31Z",
           "uri": "http://zotero.org/users/5829780/items/MP9WLX3Q",
           "itemID": 1243,
-          "key": "MP9WLX3Q"
+          "key": "MP9WLX3Q",
+          "libraryID": 1
         }
       ],
       "notes": [],
-      "itemID": 1242,
-      "key": "462HG32E",
       "citekey": "oliveiraHumorDetectionYelp2015",
       "citationKey": "oliveiraHumorDetectionYelp2015",
+      "itemID": 1242,
+      "key": "462HG32E",
       "libraryID": 1
     },
     {
@@ -442,27 +443,34 @@
         }
       ],
       "notes": [],
-      "itemID": 1245,
-      "key": "AHEWPSDK",
       "citekey": "maheshwariReportTextClassification2018",
       "citationKey": "maheshwariReportTextClassification2018",
+      "itemID": 1245,
+      "key": "AHEWPSDK",
       "libraryID": 1,
       "publicationTitle": "Medium"
     },
     {
-      "version": 0,
+      "version": 751,
       "itemType": "webpage",
       "url": "https://www.kaggle.com/revanth9/wikipediaplotdata",
+      "date": "2018",
       "accessDate": "2019-12-20T13:32:32Z",
       "title": "Stories of American movies | Kaggle",
-      "creators": [],
+      "creators": [
+        {
+          "firstName": "G",
+          "lastName": "Revanth",
+          "creatorType": "author"
+        }
+      ],
       "tags": [],
       "collections": [
         "THUSFFQ6"
       ],
       "relations": [],
       "dateAdded": "2019-12-20T13:32:32Z",
-      "dateModified": "2019-12-20T13:32:32Z",
+      "dateModified": "2020-01-18T10:57:09Z",
       "uri": "http://zotero.org/users/5829780/items/I4RY2J67",
       "attachments": [
         {
@@ -477,10 +485,106 @@
         }
       ],
       "notes": [],
+      "citekey": "revanthStoriesAmericanMovies2018",
+      "citationKey": "revanthStoriesAmericanMovies2018",
       "itemID": 1247,
       "key": "I4RY2J67",
-      "citekey": "StoriesAmericanMovies",
-      "citationKey": "StoriesAmericanMovies",
+      "libraryID": 1
+    },
+    {
+      "version": 752,
+      "itemType": "webpage",
+      "url": "https://spacy.io/usage/vectors-similarity",
+      "accessDate": "2020-01-26T16:38:43Z",
+      "language": "en",
+      "abstractNote": "spaCy is a free open-source library for Natural Language Processing in Python. It features NER, POS tagging, dependency parsing, word vectors and more.",
+      "title": "Word Vectors and Semantic Similarity · spaCy Usage Documentation",
+      "creators": [],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2020-01-26T16:38:43Z",
+      "dateModified": "2020-01-26T16:38:57Z",
+      "uri": "http://zotero.org/users/5829780/items/AZJ7P4MW",
+      "attachments": [],
+      "notes": [],
+      "citekey": "WordVectorsSemantic",
+      "citationKey": "WordVectorsSemantic",
+      "itemID": 1249,
+      "key": "AZJ7P4MW",
+      "libraryID": 1,
+      "publicationTitle": "Word Vectors and Semantic Similarity"
+    },
+    {
+      "version": 753,
+      "itemType": "manuscript",
+      "date": "2017",
+      "extra": "Citation Key: spacy2",
+      "title": "spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing",
+      "creators": [
+        {
+          "firstName": "Matthew",
+          "lastName": "Honnibal",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ines",
+          "lastName": "Montani",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2020-01-26T16:42:16Z",
+      "dateModified": "2020-01-26T16:42:16Z",
+      "uri": "http://zotero.org/users/5829780/items/VG7VCYAV",
+      "attachments": [],
+      "notes": [
+        "To appear"
+      ],
+      "citekey": "spacy2",
+      "citationKey": "spacy2",
+      "itemID": 1250,
+      "key": "VG7VCYAV",
+      "libraryID": 1
+    },
+    {
+      "version": 754,
+      "itemType": "webpage",
+      "url": "https://realpython.com/python-keras-text-classification/",
+      "accessDate": "2020-02-09T13:10:24Z",
+      "title": "Practical Text Classification With Python and Keras – Real Python",
+      "creators": [],
+      "tags": [],
+      "collections": [
+        "THUSFFQ6"
+      ],
+      "relations": [],
+      "dateAdded": "2020-02-09T13:10:24Z",
+      "dateModified": "2020-02-09T13:10:24Z",
+      "uri": "http://zotero.org/users/5829780/items/C5F2JXBN",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Practical Text Classification With Python and Keras – Real Python",
+          "tags": [],
+          "relations": [],
+          "dateAdded": "2020-02-09T13:10:50Z",
+          "dateModified": "2020-02-09T13:10:50Z",
+          "uri": "http://zotero.org/users/5829780/items/8HULSRTK",
+          "path": "/Users/miriamamin/Documents/Zotero/storage/8HULSRTK/python-keras-text-classification.html"
+        }
+      ],
+      "notes": [],
+      "citekey": "PracticalTextClassification",
+      "citationKey": "PracticalTextClassification",
+      "itemID": 1252,
+      "key": "C5F2JXBN",
       "libraryID": 1
     }
   ]
