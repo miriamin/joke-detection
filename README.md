@@ -9,7 +9,7 @@ the computational treatment of humor is far behind.
 
 Former research in computational humor was mainly carried out on Humor
 Generation and Humor Detection. None of the humor generators
-presented so far were able to produce human-like humor. From my
+presented so far were able to produce human-like humor. From my previous
 investigations I concluded two approaches which seemed promising for the
 advancement of joke generators – a generative and a restrictive
 approach. A generative approach to humor generation would aim at
